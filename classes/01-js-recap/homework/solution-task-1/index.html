@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Movie App</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>My Favorite Movies</h1>
+    </header>
+    <section class="section">
+      <form class="form-group" id="movie-form">
+        <label>
+          Movie Name:
+          <input type="text" id="name" />
+        </label>
+        <label>
+          Genre:
+          <input type="text" id="genre" />
+        </label>
+        <label>
+          Release Year:
+          <input type="number" id="releaseYear" />
+        </label>
+        <label>
+          Director:
+          <input type="text" id="director" />
+        </label>
+        <label>
+          Description:
+          <textarea id="description"></textarea>
+        </label>
+        <button type="button" onclick="addMovie()">Add Movie</button>
+      </form>
+    </section>
+    <section class="section filter-sort-group">
+      <div>
+        Filter by Genre:
+        <select id="filterGenre" onchange="filterMovies()">
+          <option value="">All</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+          <option value="Crime">Crime</option>
+        </select>
+      </div>
+      <div>
+        Sort by Release Year:
+        <button onclick="sortMovies()">Ascending</button>
+      </div>
+    </section>
+    <section class="section movie-list" id="movie-list">
+      <!-- Movie items will be displayed here -->
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
