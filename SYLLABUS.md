@@ -1,6 +1,15 @@
-# Advanced JavaScript with React – Syllabus
+# Advanced JavaScript with React
 
-**Semester:** Spring 2025  
+## How to Use This Repo
+
+- Navigate to `classes/XX-[topic]/` for each week's materials.
+- Each folder includes:
+  - `code/` for code examples or in-class demos
+  - `homework/` for exercises and assignments
+  - `resources/` for slides, references, and additional reading
+  - `index.md` outlining the class goals and structureabus
+
+**Semester:** XX  
 **Course Duration:** 11 Weeks   
 
 This course introduces students to React, a popular JavaScript library for building user interfaces. It includes hands-on projects, class coding sessions, and regular homework assignments.
@@ -35,6 +44,3 @@ This course introduces students to React, a popular JavaScript library for build
   - `index.md` outlining the class goals and structure
 
 ---
-
-📌 _This file is part of the base template and should be updated to reflect any changes in class delivery or weekly content.
-

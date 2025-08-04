@@ -1,6 +1,6 @@
 # 📚 JavaScript with React – Classes
 
-This folder contains the class materials for the **JavaScript with React** course, Spring 2025.
+This folder contains the class materials for the **JavaScript with React** course.
 
 Each class folder includes:
 
@@ -24,4 +24,4 @@ Each class folder includes:
 
 ---
 
-Feel free to open an issue or ask your instructor if any file is unclear or missing.
+Please ask your instructor if any material is unclear or if you have questions about the content.

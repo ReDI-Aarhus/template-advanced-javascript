@@ -213,26 +213,15 @@ Ensure that all components are correctly imported and rendered in the `App.jsx`.
 
   <br>
 
-  There are a couple of possible reasons why you may be unable to *push* changes to a Git repository:
+  This repository is read-only for students. You should create your own local project and work on it instead.
 
-  1. **You have not committed your changes:** Before you can push your changes to the repository, you need to commit them using the `git commit` command. Make sure you have committed your changes and try pushing again. To do this, run the following terminal commands from the project folder:
-
-   ```bash
-   git add .
-   git commit -m "Your commit message"
-   git push
-   ```
-
-   2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the teacher's repository without making a *Fork* first, you do not have write access to the repository.
-   To check which remote repository you have cloned, run the following terminal command from the project folder:
-
-   ```bash
-   git remote -v
-   ```
-
-  If the link shown is the same as the main teacher's repository, you will need to fork the repository to your GitHub account first, and then clone your fork to your local machine to be able to push the changes.
-
-  Note: You may want to make a copy of the code you have locally, to avoid losing it in the process.
+  1. **Create a new project:** Set up a new project using Vite or Create React App.
+  
+  2. **Copy the necessary files:** Copy only the files you need for your assignment into your new project.
+  
+  3. **Complete your work:** Work on your assignment in your own project.
+  
+  4. **Submit your work:** Follow your teacher's instructions for submitting your completed assignment.
 
   <br>
 
