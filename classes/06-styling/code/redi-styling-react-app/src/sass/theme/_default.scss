@@ -1,0 +1,33 @@
+:root {
+
+    --blue-ocean: #007bff;
+
+
+    --primary-color: var(--blue-ocean);
+    --primary-color-light: #007bff;
+    --primary-color-dark: #0056b3;
+    --primary-color-darker: #004085;
+    --primary-color-lighter: #66b3ff;
+    --primary-color-lightest: #cce5ff;
+
+
+
+    
+
+    --primary-500: var(--blue-ocean);
+    --primary-600: #0056b3;
+
+    --secondary-color: red;
+    --tertiary-color: green;
+
+
+
+
+    --button-text-color: var(--primary-color);
+}
+
+
+body {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}

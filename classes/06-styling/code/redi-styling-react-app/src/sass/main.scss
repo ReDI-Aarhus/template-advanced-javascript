@@ -1,0 +1,240 @@
+@use "./vendors/tailwind";
+@use "sass:meta";
+
+.navbar {
+    &.primary  {
+        border: 1px solid black;
+
+
+    }
+}
+
+.navbar .primary {
+   
+}
+
+$primary-color: blue;
+
+:root {
+    --primary-color: blue;
+    --secondary-color: red;
+    --tertiary-color: green;
+
+}
+
+.navbar {
+    background-color: $primary-color;
+  
+
+    
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    @include absolute-center;
+    width: 100px;
+    height: 100px;
+    background-color: $primary-color;
+}
+
+
+.block-card {
+
+    &-image {
+
+    }
+}
+
+.block-card-image {
+
+}
+
+
+
+
+/*
+  0 - 600px:      Phone
+  600 - 900px:    Tablet portrait
+  900 - 1200px:   Tablet landscape
+  [1200 - 1800] is where our normal styles apply
+  1800px + :      Big desktop
+  1em = 16px
+  */
+  @mixin breakpoint($breakpoint) {
+    @if $breakpoint == phone-small {
+      @media only screen and (max-width: 25em) {
+        @content;
+      } //400px
+    }
+    @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) {
+        @content;
+      } //600px
+    }
+    @if $breakpoint == tab-port {
+      @media only screen and (max-width: 62.5em) {
+        @content;
+      } //1000px
+    }
+    @if $breakpoint == tab-land {
+      @media only screen and (max-width: 75em) {
+        @content;
+      } //1200px
+    }
+    @if $breakpoint == mid-desktop {
+      @media only screen and (max-width: 90em) {
+        @content;
+      } //1440px
+    }
+    @if $breakpoint == big-desktop {
+      @media only screen and (min-width: 112.5em) {
+        @content;
+      } //1800
+    }
+  
+    @if $breakpoint == huge-desktop {
+      @media only screen and (min-width: 187.5em) {
+        @content;
+      } //3000
+    }
+  
+    @if meta.type-of($breakpoint) == number {
+      @media only screen and (max-width: #{$breakpoint}) {
+        @content;
+      } //1800
+    }
+  }
+
+  html {
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+      
+  
+
+   
+      @include breakpoint(tab-port) {
+        // width < 800?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+      }
+  
+      @include breakpoint(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+      }
+    }
+  
+  
+
+  button {
+    padding: 2rem !important;
+}
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+main {
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--primary-color);
+
+}
+
+h1 {
+    font-size:48px;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+
+h3 {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+h4 {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+h5 {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+h6 {
+    font-size: 14px;
+    color: var(--primary-color);
+}
+p {
+    font-size: 16px;
+    color: var(--primary-color);
+
+    &.bold {
+        font-weight: bold;
+    }
+    &.italic {
+        font-style: italic;
+    }
+    &.underline {
+        text-decoration: underline;
+    }
+    &.line-through {
+        text-decoration: line-through;
+    }
+}
+a {
+    font-size: 16px;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: var(--secondary-color);
+        text-decoration: underline;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+<p class="bold">This is a bold text</p>
+<p class="italic">This is an italic text</p>
+<p class="underline">This is an underline text</p>
